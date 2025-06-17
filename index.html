@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JETSgoMakanSaver</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffbe6;
+    }
+    header, footer {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #ffd966;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 30px 15px;
+      background-color: #fff2cc;
+    }
+    .hero h1 {
+      font-size: 2.3em;
+    }
+    .hero p {
+      font-size: 1.1em;
+      color: #444;
+    }
+    .button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .button:hover {
+      background-color: #218838;
+    }
+
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      max-height: 250px;
+      margin: 20px 0;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0% { margin-left: 0; }
+      33% { margin-left: -100%; }
+      66% { margin-left: -200%; }
+      100% { margin-left: 0; }
+    }
+
+    .menu {
+      padding: 20px;
+      text-align: center;
+    }
+    .menu h2 {
+      margin-bottom: 10px;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    .menu li {
+      padding: 8px;
+      background: #ffe599;
+      margin: 5px auto;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .form-section {
+      padding: 30px;
+      background-color: #fff9db;
+      text-align: center;
+    }
+    .form-section input, .form-section textarea {
+      width: 90%;
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      display: block;
+    }
+    .form-section button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer p {
+      margin: 0;
+    }
+    @media screen and (max-width: 600px) {
+      .hero h1 { font-size: 1.6em; }
+      nav a { display: block; margin: 5px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JETSgoMakanSaver</h1>
+    <p>Promosi hebat! Jimat & Sedap dengan JETSgoMakanSaver!</p>
+  </header>
+
+  <nav>
+    <a href="#">Laman Utama</a>
+    <a href="#menu">Menu</a>
+    <a href="#tempah">Tempahan</a>
+    <a href="https://wa.me/60199081033" target="_blank">WhatsApp Kami</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Jimat Lebih, Makan Sedap!</h1>
+    <p>Tempah makanan sihat, lazat dan mesra kanak-kanak dengan kami hari ini.</p>
+    <a class="button" href="https://wa.me/60199081033" target="_blank">Tempah Sekarang</a>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="makan1.jpg" alt="Makanan 1" />
+      <img src="makan2.jpg" alt="Makanan 2" />
+      <img src="makan3.jpg" alt="Makanan 3" />
+    </div>
+  </div>
+
+  <section class="menu" id="menu">
+    <h2>Menu Popular</h2>
+    <ul>
+      <li>🍛 Nasi Ayam JETS - RM6.00</li>
+      <li>🍝 Spaghetti Kanak-Kanak - RM5.00</li>
+      <li>🥪 Sandwich Telur & Keju - RM4.50</li>
+      <li>🥗 Salad Buah Mini - RM3.50</li>
+      <li>🍹 Air Jus Oren Segar - RM2.50</li>
+    </ul>
+  </section>
+
+  <section class="form-section" id="tempah">
+    <h2>Tempah Sekarang</h2>
+    <form>
+      <input type="text" placeholder="Nama Penuh" required />
+      <input type="tel" placeholder="Nombor Telefon" required />
+      <textarea rows="4" placeholder="Pesanan / Permintaan Khas"></textarea>
+      <button type="submit">Hantar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JETSgoMakanSaver. Semua Hak Terpelihara.</p>
+  </footer>
+
+</body>
+</html>
